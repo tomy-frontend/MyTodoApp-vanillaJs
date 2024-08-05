@@ -1,13 +1,54 @@
 <!doctype html>
-<html lang="en">
+<html lang="ja">
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
+    <title>TodoJs</title>
   </head>
   <body>
-    <div id="app"></div>
+
+    <!-- 入力エリア -->
+    <div class="input-area">
+      <input id="add-text" placeholder="TODOを入力" type="text">
+      <button id="add-button">追加</button>
+    </div>
+    <!-- 入力エリア -->
+
+    <!-- 未完了エリア -->
+    <div class="incompleate-area">
+      <p class="title">未完了のTODO</p>
+      <ul id="incompleate-list">
+        <!-- このliの内容をinputで入力されたものが入るようにする -->
+
+        <!-- JSで生成する -->
+        <!-- <li>
+          <div class="list-row">
+            <p class="todo-item">未完了のTODOの内容</p>
+            <button>完了</button>
+            <button>削除</button>
+         </div>
+        </li> -->
+        <!-- JSで生成する -->
+      </ul>
+    </div>
+    <!-- 未完了エリア -->
+
+    <!-- 完了エリア -->
+    <div class="complete-area">
+      <p class="title">完了したTODO</p>
+      <ul id="complete-list">
+        <!-- <li>
+          <div class="list-row">
+           <p class="todo-item">完了したTODO</p>
+          <button>戻す</button>
+         </div>
+        </li> -->
+      </ul>
+    </div>
+    <!-- 完了エリア -->
+
+
     <script type="module" src="/main.js"></script>
   </body>
 </html>
